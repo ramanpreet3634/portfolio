@@ -368,12 +368,12 @@ section h2 {
 /* Navigation Bar */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #01203f;
   padding: 1rem 2rem;
   color: white;
-  position: sticky;
+  position:sticky;
   top: 0;
   z-index: 100;
 }
