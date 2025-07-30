@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Ramanpreet Kaur</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="projects-page">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+
+    </div>
+    <ul class="nav-links">
+      <li><a href="protfolio.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experiance.html">Experience</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="publications.html">Publications</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects Container -->
+  <div class="projects-wrapper">
+    <div class="projects-card">
+      <h2>My Projects</h2>
+
+      <!-- Project: Fire N Grill -->
+      <div class="project-item" onclick="toggleProject('p1')">
+        <div class="project-header">
+          <img src="images/firengrill-logo.png" alt="Fire N Grill Logo" />
+          <h3>Fire N Grill</h3>
+        </div>
+        <div class="project-details" id="p1">
+          <p><strong>Description:</strong> Restaurant Management and Food Ordering App.</p>
+          <p><strong>Technologies:</strong> Java, Firebase, Google Maps API</p>
+          <p><a href="https://play.google.com/store/apps/details?id=com.alokdev21.foodapk" target="_blank">Play Store</a> | 
+             <a href="https://github.com/ramanpreet3634/FRN" target="_blank">GitHub</a></p>
+        </div>
+      </div>
+
+      <!-- Project: Pool2School -->
+      <div class="project-item" onclick="toggleProject('p2')">
+        <div class="project-header">
+          <img src="logop2s.jpg" alt="Pool2School Logo" />
+          <h3>Pool2School</h3>
+        </div>
+        <div class="project-details" id="p2">
+          <p><strong>Description:</strong> Carpooling app for students based on PIN code and school.</p>
+          <p><strong>Technologies:</strong> Kotlin, Firebase</p>
+          <p><a href="https://github.com/aloksharma-1/pool2school" target="_blank">GitHub</a></p>
+        </div>
+      </div>
+
+      <!-- Project: GreenWave -->
+      <div class="project-item" onclick="toggleProject('p3')">
+        <div class="project-header">
+          <img src="images/greenwave-logo.png" alt="GreenWave Logo" />
+          <h3>GreenWave</h3>
+        </div>
+        <div class="project-details" id="p3">
+          <p><strong>Description:</strong> Environmental awareness app with sustainability modules.</p>
+          <p><strong>Technologies:</strong> Java, WebView, GCP</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Ongoing Projects Section -->
+<div class="projects-card ongoing-section">
+  <h2>Ongoing Projects</h2>
+
+  <!-- Project: Luminara -->
+  <div class="project-item" onclick="toggleProject('p4')">
+    <div class="project-header">
+      <img src="images/luminara-logo.png" alt="Luminara Logo" />
+      <h3>Luminara</h3>
+    </div>
+    <div class="project-details" id="p4">
+      <p><strong>Description:</strong> Luminara is a Travel guide Application .</p>
+      <p><strong>Technologies:</strong> Kotlin, Firebase, Realtime Database, Machine learning</p>
+      <p><em>Status:</em> In Progress</p>
+    </div>
+  </div>
+
+  <!-- Project: Image Processing Pipeline using AWS -->
+  <div class="project-item" onclick="toggleProject('p5')">
+    <div class="project-header">
+      <img src="images/aws-pipeline-logo.png" alt="AWS Pipeline Logo" />
+      <h3>Image Processing Pipeline (AWS)</h3>
+    </div>
+    <div class="project-details" id="p5">
+      <p><strong>Description:</strong> A scalable cloud-native pipeline to automate image analysis, resizing, and object detection using AWS Rekognition and Lambda.</p>
+      <p><strong>Technologies:</strong> Python, AWS Lambda, S3, EC2, Boto3</p>
+      <p><em>Status:</em> In Progress</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  
+
+  <script>
+    function toggleProject(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
